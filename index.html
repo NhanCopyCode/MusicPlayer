@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Music player</title>
+</head>
+<body>
+    <div id="root">
+        <div class="player ">
+            <div class="dashboard">
+                <header>
+                    <h4>Now playing:</h4>
+                    <h2>Đường tôi chở em về</h2>
+                </header>
+                <div class="cd">
+                    <div class="cd-thumb" style="background-image: url('./assets/img/DuongToiChoEmVe.jpg');"></div>
+                </div>
+    
+                <div class="group__btn">
+                    <div class="btn return__btn">
+                        <i class="fa-solid fa-rotate-left"></i>
+                    </div>
+                    <div class="btn backward__btn">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </div>
+                    <div class="btn toggle__btn">
+                        <i class="fa-solid fa-play icon-play"></i>
+                        <i class="fa-solid fa-stop icon-pause"></i>
+                    </div>
+                    <div class="btn forward__btn">
+                        <i class="fa-solid fa-forward-step "></i>
+                    </div>
+
+                    <div class="btn random__btn">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </div>
+                </div>
+                <input type="range" class="progress" min="0" max="100" step="1" value="0">
+                <audio id= "audio" src=""></audio>
+
+            </div>
+            <div class="play-list">
+                
+                
+            </div>
+        </div>
+    </div>
+    <script src="./assets/static/main.js"></script>
+    
+</body>
+</html>
